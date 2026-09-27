@@ -51,9 +51,3 @@ src/
   main.ts      UI rendering, keyboard controls, bounded preloading
   styles.css   minimal dark theme
 ```
-
-## Tests
-
-```
-cd src-tauri && cargo test
-```
