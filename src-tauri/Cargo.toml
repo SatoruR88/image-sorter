@@ -2,6 +2,7 @@
 name = "image-sorter"
 version = "0.1.0"
 description = "A lightweight Tauri app for sorting images into folders"
+license = "MIT"
 repository = "https://github.com/SatoruR88/image-sorter"
 edition = "2021"
 
