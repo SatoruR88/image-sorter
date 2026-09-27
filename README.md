@@ -4,10 +4,19 @@ Lightweight Windows desktop app for manually sorting large numbers of images
 into subfolders. Rust + Tauri + vanilla TypeScript. No frameworks, no database —
 the filesystem is the source of truth.
 
-## Run
+## Download
+
+Download the latest Windows installer from
+[GitHub Releases](https://github.com/SatoruR88/image-sorter/releases/latest).
+
+## Build from source
+
+Install the [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/):
+Node.js LTS, Rust with the MSVC toolchain, Microsoft C++ Build Tools, and
+Microsoft Edge WebView2.
 
 ```
-npm install
+npm ci
 npm run tauri dev      # development
 npm run tauri build    # release build (.msi / .exe in src-tauri/target/release)
 ```
