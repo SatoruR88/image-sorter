@@ -1,0 +1,23 @@
+{
+  "name": "image-sorter",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A lightweight Tauri app for sorting images into folders.",
+  "repository": "https://github.com/SatoruR88/image-sorter",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.7.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.16"
+  }
+}

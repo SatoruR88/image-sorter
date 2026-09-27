@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Sorter</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <header id="topbar">
+      <span id="root-path"></span>
+      <span id="progress"></span>
+    </header>
+
+    <main id="viewer">
+      <img id="preview" alt="" draggable="false" hidden />
+      <div id="message" hidden></div>
+      <div id="broken" hidden>
+        <p id="broken-name"></p>
+        <p class="dim">Cannot display this image (corrupted or unsupported).</p>
+        <p class="dim">Press a number to classify, &rarr; to skip, or Delete.</p>
+      </div>
+      <div id="start" hidden>
+        <button id="open-folder" class="primary">Open Folder&hellip;</button>
+      </div>
+    </main>
+
+    <footer id="bottombar" hidden>
+      <div id="categories"></div>
+      <div id="actions">
+        <span id="new-category" hidden>
+          <input id="new-category-name" type="text" placeholder="Folder name" maxlength="100" />
+        </span>
+        <button id="add-category" title="New category folder">+</button>
+        <button id="undo" title="Undo (Ctrl+Z)" disabled>&#x21A9;</button>
+        <button id="delete" class="danger" title="Send to Recycle Bin (Del)">Delete</button>
+      </div>
+    </footer>
+
+    <div id="toast" hidden></div>
+  </body>
+</html>
